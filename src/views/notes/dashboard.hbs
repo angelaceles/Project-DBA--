@@ -1,0 +1,64 @@
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+        <div class="box-2">
+            <a class="btn btn-two" href="/users/profile/{{proce_result.user_id}}">PROFILE</a>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="box-2">
+            <a class="btn btn-two" href="/notes/table">
+                NOTE TABLE
+            </a>              
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+<br><br>
+<div class="row">
+    <div class="main-part">
+        <div class="cpanel">
+            <div class="icon-part">
+            <i class="fa fa-calendar" aria-hidden="true"></i><br>
+            <small>Tasks created today</small>
+            {{#if proce_result.por_dia}}
+            <p>{{proce_result.por_dia}}</p>
+            {{else}}
+            <p>No to created any tasks</p>
+            {{/if}}
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+        </div>
+        <div class="cpanel cpanel-orange">
+            <div class="icon-part">
+            <i class="fa fa-bell" aria-hidden="true"></i><br>
+            <small>Tasks to be done</small>
+            {{#if proce_result.incumplidas}}
+            <p>{{proce_result.incumplidas}}</p>
+             {{else}}
+            <p>You don't have any tasks to do</p>
+            {{/if}}
+            </div>
+            <div class="card-content-part">
+                <a href="/notes">More Details </a>
+            </div>
+        </div>
+        <div class="cpanel cpanel-blue">
+            <div class="icon-part">
+            <i class="fa fa-tasks" aria-hidden="true"></i><br>
+            <small>Complete tasks</small>
+            {{#if proce_result.cumplidas}}
+            <p>{{proce_result.cumplidas}}</p>
+            {{else}}
+            <p>You fulfill all your tasks</p>
+            {{/if}}
+            </div>
+            <div class="card-content-part">
+              <a href="#">More Details </a>
+            </div>
+        </div>
+    </div>
+</div>

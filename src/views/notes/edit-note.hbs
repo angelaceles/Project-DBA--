@@ -1,0 +1,29 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-dark">Edit Note</h3>
+        </div>
+        <div class="card-body">
+            <form action="/notes/edit-note/{{RowDataPacket.id}}?_method=PUT" method="post">
+            <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="curso" placeholder="Lesson" value="{{RowDataPacket.curso}}">
+                </div>
+                <br>
+                 <div class="form-group">
+                    <input type="text" class="form-control" name="titulo" placeholder="Title" value="{{RowDataPacket.titulo}}">
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea name="descripcion" class="form-control">
+                        {{RowDataPacket.descripcion}}
+                    </textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit" >Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

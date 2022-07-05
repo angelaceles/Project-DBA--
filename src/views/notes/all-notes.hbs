@@ -1,0 +1,76 @@
+{{!-- <div class="row">
+    {{#each RowDataPacket}}
+    <div class="col-md-3 p-1">
+        <div class="card">
+            <div class="card-body">
+                
+                <div class="row">
+                    <div class="col-10 card-title text-dark d-flex justify-content-between align-items-center">
+                        <h4>
+                            {{curso}}
+                        </h4>
+                    </div>
+                    <div class="col-2">
+                         <a href="/notes/edit/{{id}}"><i class="fa fa-edit"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-info">
+                        <h3>{{titulo}}</h3>
+                    </div>
+                </div>
+                <p class="text-dark p-2">
+                    {{descripcion}}
+                </p>
+                <form action="/notes/remove/{{id}}?_method=PUT" method="post">
+                    <input  type="hidden" name="_method" value="PUT">
+                    <button class="btn btn-danger btn-block" type="submit">
+                    Remove 
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{else}} 
+    <div class="card mx-auto">
+        <div class="card-body">
+            <p class="lead text-dark">There are not notes yet</p>
+            <a href="/notes/add" class="btn btn-success btn-block">Create one</a>
+        </div>
+    </div>
+    {{/each}}
+</div> --}}
+
+ <div class="notes">
+     {{#each RowDataPacket}}
+    <div class="c-note">
+      <div class="note" >
+            <h4> {{curso}} </h4>
+            <h3>{{titulo}}</h3>
+        <div class="sc3" style="height:6rem; overflow:auto;">
+            <p class="text-break">{{descripcion}}</p>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <form action="/notes/remove/{{id}}?_method=PUT" method="post">
+                    <input  type="hidden" name="_method" value="PUT">
+                    <button class="btn btn-danger btn-block" type="submit">
+                    Remove 
+                    </button>
+                </form>
+            </div>
+            <div class="col-4">
+                <a href="/notes/edit/{{id}}"><i class="fa fa-edit"></i></a>
+            </div>
+        </div>
+      </div>
+    </div class="c-note">
+     {{else}} 
+    <div class="card mx-auto">
+        <div class="card-body">
+            <p class="lead text-dark">There are not notes yet</p>
+            <a href="/notes/add" class="btn btn-success btn-block">Create one</a>
+        </div>
+    </div>
+    {{/each}}
+</div class="notes">
