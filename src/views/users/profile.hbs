@@ -1,0 +1,40 @@
+<div class="row m-3">
+    <div class="col-5 ">
+        <br>
+        <h4>Profile information.</h4>
+        <h6>Update your account's profile information and email address</h6>
+    </div>
+    <div class="col-7">
+        <div class="card">
+            <div class="card-body">
+                 <form action="/users/edit-user/{{user._id}}?_method=PUT" method="post" class="form">
+                    <input type="hidden" name="_method" value="PUT">
+                    <div class="">
+                        <h2 class="title-card">You can update...</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sign" name="name" placeholder="Name" value="{{user.name}}">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control input-sign" name="email" placeholder="Email" value="{{user.email}}">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="sign-button">
+                            Accept
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <br>
+         <form action="/users/delete/{{user._id}}?_method=DELETE" method="post">
+            <input  type="hidden" name="_method" value="DELETE">
+            <button class="btn btn-danger btn-block m-2"  type="submit" target="click" onclick="return confirm('Are you sure to delete your account permanently? the notes you have created will also be deleted from the database?')"alt="">
+                Delete my account
+            </button>
+        </form>
+    </div>
+</div>
