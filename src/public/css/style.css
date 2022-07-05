@@ -1,0 +1,327 @@
+/*
+ * Globals
+ */
+
+
+.logo{
+  width: 35%;
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.cover-container {
+  max-width: 60em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead{
+  color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+
+
+.btn-two {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+
+
+  .main-part{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  padding: 0px 5px;
+  }
+  .cpanel{
+  width:32%;
+  display: inline-block;
+  background-color:#34495E;
+  color:#fff;
+  margin-top: 50px;
+  }
+  .icon-part i{
+  font-size: 30px;
+  padding:10px;
+  border:1px solid #fff;
+  border-radius:50%;
+  margin-top:-25px;
+  margin-bottom: 10px;
+  background-color:#34495E;
+  }
+  .icon-part p{
+  margin:0px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  }
+  .card-content-part{
+  background-color: #2F4254;
+  padding: 5px 0px;
+  }
+  .cpanel .card-content-part:hover{
+  background-color: #5a5a5a;
+  cursor: pointer;
+  }
+  .card-content-part a{
+  color:#fff;
+  text-decoration: none;
+  }
+  .cpanel-orange .icon-part,.cpanel-orange .icon-part i{
+  background-color: #F39C12;
+  }
+  .cpanel-orange .card-content-part{
+  background-color: #DA8C10;
+  }
+  .cpanel-blue .icon-part,.cpanel-blue .icon-part i{
+  background-color: #2980B9;
+  }
+  .cpanel-blue .card-content-part{
+  background-color:#2573A6;
+  }
+
+.card{
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title-card{
+  padding-bottom:  10px;
+  width: 100%;
+  color: #78788c;
+  border-bottom:  3px solid #78788c;
+}
+
+.input-sign{
+  width: 100%;
+  box-sizing:  border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.input-sign:focus{
+  border-bottom: 2px solid #78788c;
+}
+
+.sign-button{
+  float: right;
+  padding: 4px 12px;
+  margin: 1px 0 0;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sign-button:hover{
+  background:  #78788c;
+  color:#fff;
+}
+
+.sc2::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.sc2::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.sc2::-webkit-scrollbar-thumb {
+  background-color: #11171a;
+  border-radius: 10px;
+}
+
+
+.sc3::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.sc3::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.032);
+}
+.sc3::-webkit-scrollbar-thumb {
+  background-color: #11171a17;
+}
+
+
+
+.notes, .c-note{
+  list-style:none;
+}
+.notes{
+  overflow:hidden;
+  padding:2em;
+}
+.notes .c-note .note{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:15em;
+  width:15em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.notes .c-note{
+  margin:1em;
+  float:left;
+}
+.notes .c-note h2{
+  font-size:110%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.notes .c-note p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:120%;
+}
+.notes .c-note .note{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+.notes .c-note:nth-child(even) .note{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+.notes .c-note:nth-child(3n) .note{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+.notes .c-note:nth-child(5n) .note{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+.notes .c-note .note:hover,ul .c-note .note:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol .c-note{display:inline;padding-right:1em;}
+ol .c-note .note{color:#fff;}
